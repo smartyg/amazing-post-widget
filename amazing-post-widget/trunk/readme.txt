@@ -1,9 +1,9 @@
 === Amazing Posts Widget ===
 Contributors: faugro
 Donate link: http://pancenjoss.com/
-Tags: widget, widgets, posts, recent posts, thumbnails, custom post types
+Tags: widget, posts, post, thumbnails, custom post types
 Requires at least: 3.4
-Tested up to: 3.5.1
+Tested up to: 3.5.2
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,5 +32,9 @@ This widget is combining and inspired by two great plugin, recent post flexslide
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Replace background-image for slider navigation with background-color
+* Add responsive css code, will show only 1 column on small device
+
+= 1.0.0 =
 * First public release
