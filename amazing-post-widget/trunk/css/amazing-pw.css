@@ -72,8 +72,8 @@
   /* Do not edit below this line */
   position:relative;
 }
-.liquid-slider-wrapper .liquid-nav a {width:12px; height:11px; padding:0; margin:0 4px 0 0; text-indent:-999em; background: url(../images/interface.png) no-repeat 50% 0;}
-.liquid-slider-wrapper .liquid-nav a:hover, .liquid-slider-wrapper .liquid-nav .current {background-position: 50% -11px;}
+.liquid-slider-wrapper .liquid-nav a {width:19px; height:13px; padding:0; margin:0 4px 0 0; text-indent:-999em; background-color:#ddd;}
+.liquid-slider-wrapper .liquid-nav a:hover, .liquid-slider-wrapper .liquid-nav .current {background-color:#aaa;}
 .currentCrossLink {font-weight: bold;}
 .liquid-slider-wrapper .liquid-nav ul {  
   padding:0;
@@ -244,7 +244,7 @@
   position:absolute;
   text-align:center;
   text-decoration:none;
-  width:100%; 
+  width:84%; 
   z-index:100;
   top:0;
   right:0;
@@ -253,9 +253,8 @@
   background: #333;
   background: rgba(0,0,0,.9);
   color:#FFF;
-  /* padding:35% 8% 0; */
+  padding:0 8%;
 }
-.tp-carousel-posts.three-cols a span.title { padding:0 8%; }
 .tp-carousel-posts.portf-cols a span.title span{
   position:relative;
   top:50%;
@@ -285,13 +284,8 @@
 * Tablet & Smaller Laptops
 * This will include tablets and some netbooks.
 ******************************************************************/
-@media only screen and (min-width: 768px) {
-  .liquid-slider-wrapper .liquid-slider .panel img{
-    /* Example */
-    /*
-    width:24%;
-    */
-  }
+@media only screen and (max-width: 767px) {
+  .liquid-slider .hentry{min-width:100%;}
   .liquid-responsive .liquid-slider .panel .panel-wrapper {
     /* padding: 20px 35px; */
   }
