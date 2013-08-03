@@ -22,7 +22,7 @@ This widget is combining and inspired by two great plugin, recent post flexslide
 * Easily set your own image width and height.
 * Select the sort orderby: Date, ID, Title, Menu Order, Random and sort order: ASC or DESC.
 
-Check out our demo : [Demo1](http://demo.theme-pack.com/featured-page/)
+Check out our demo : <a href="http://demo.theme-pack.com/featured-page/">demo1</a>
 
 
 == Installation ==
