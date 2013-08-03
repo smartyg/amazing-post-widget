@@ -3,7 +3,7 @@ Contributors: faugro
 Donate link: http://pancenjoss.com/
 Tags: widget, posts, post, thumbnails, custom post types
 Requires at least: 3.4
-Tested up to: 3.5.2
+Tested up to: 3.6
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,9 @@ This widget is combining and inspired by two great plugin, recent post flexslide
 * Easily set your own image width and height.
 * Select the sort orderby: Date, ID, Title, Menu Order, Random and sort order: ASC or DESC.
 
+Check out our demo
+[Demo1] (http://demo.theme-pack.com/featured-page/)
+
 
 == Installation ==
 
@@ -31,6 +34,9 @@ This widget is combining and inspired by two great plugin, recent post flexslide
 
 
 == Changelog ==
+
+= 1.0.2 =
+* Fixed bug, enqueue jquery easing (sorry, i forget to add this on 1.0.1 version), it will work great now.
 
 = 1.0.1 =
 * Replace background-image for slider navigation with background-color
