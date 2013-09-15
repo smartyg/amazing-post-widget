@@ -130,6 +130,7 @@ class PJ_Amazing_Posts_Widget extends WP_Widget {
 		while($i<$pages_number)
 		{
 			$argss[$i] = array(
+				'ignore_sticky_posts' => 1,
 				'cat' 				=> $categories,
 				'post_type'			=> $post_type_array,
 				'post_status'		=> array('publish', 'inherit'),
