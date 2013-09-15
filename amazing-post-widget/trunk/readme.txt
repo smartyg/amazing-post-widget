@@ -33,7 +33,13 @@ Demo on Premium theme: <a href="http://wp.themesoul.com/nyirok/" target="_blank"
 1. Go to 'Appearance' > 'Widgets' and place the widget into a sidebar to configure it.
 
 
+== Installation ==
+
+
 == Changelog ==
+
+= 1.0.3 =
+* Added ignore sticky post code.
 
 = 1.0.2 =
 * Fixed bug, enqueue jquery easing (sorry, i forget to add this on 1.0.1 version), it will work great now.
