@@ -23,6 +23,7 @@ This widget is combining and inspired by two great plugin, recent post flexslide
 * Select the sort orderby: Date, ID, Title, Menu Order, Random and sort order: ASC or DESC.
 
 Check out our demo : <a href="http://demo.theme-pack.com/featured-page/" target="_blank">demo1</a>
+Demo on Premium theme: <a href="http://wp.themesoul.com/nyirok/" target="_blank">demo2</a>
 
 
 == Installation ==
