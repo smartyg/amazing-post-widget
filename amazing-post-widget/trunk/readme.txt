@@ -38,6 +38,9 @@ Demo on Premium theme: <a href="http://wp.themesoul.com/nyirok/" target="_blank"
 
 == Changelog ==
 
+= 1.0.4 =
+* Added enqueue jquery, fixed bug if theme not load jquery.
+
 = 1.0.3 =
 * Added ignore sticky post code.
 

@@ -4,7 +4,7 @@ Plugin Name: Amazing Posts Widget
 Plugin URI: http://pancenjoss.com
 Author: Faugro
 Author URI: http://pancenjoss.com
-Version: 1.0.3
+Version: 1.0.4
 Description: Amazing way to show your post, you can easily set your column, row, option to show it as slideshow, also the best part is you also can choose custom post type.
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -50,12 +50,17 @@ function register_apw_style() {
 	wp_enqueue_style( 'amazing-pw-styles' );
 }
 
+function register_apw_jquery() {
+	wp_enqueue_script ( 'jquery' );
+}
+
 function register_apw_script() {
 	wp_register_script( 'jquery-touchSwipe', plugins_url( 'js/jquery.touchSwipe.min.js', __FILE__ ), array('jquery'), '', true );
 	wp_register_script( 'jquery-ls', plugins_url( 'js/jquery.liquid-slider.min.js', __FILE__ ), array('jquery'), '', true );
 	wp_register_script( 'jquery_easing', plugins_url( 'js/jquery.easing.1.3.js', __FILE__ ), array('jquery'), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'register_apw_style' );
+add_action( 'wp_enqueue_scripts', 'register_apw_jquery' );
 add_action( 'wp_enqueue_scripts', 'register_apw_script' );
 		
 global $pagenow;
