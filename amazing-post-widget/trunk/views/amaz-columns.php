@@ -7,9 +7,14 @@
 if ( !defined('ABSPATH') )
 	die('-1');
 
-wp_enqueue_script( 'jquery-touchSwipe' );
-wp_enqueue_script( 'jquery-ls' );
-wp_enqueue_script( 'jquery_easing' );
+if ( !function_exists( 'enqueue_col_script' ) ) {	
+function enqueue_col_script() {
+	wp_enqueue_script( 'jquery-touchSwipe' );
+	wp_enqueue_script( 'jquery-ls' );
+	wp_enqueue_script( 'jquery_easing' );
+}
+add_action('wp_enqueue_scripts', 'enqueue_col_script');
+}
 global $post;
 $widget_no = rand(1,999);
 echo $before_widget;

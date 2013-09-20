@@ -22,21 +22,24 @@ This widget is combining and inspired by two great plugin, recent post flexslide
 * Easily set your own image width and height.
 * Select the sort orderby: Date, ID, Title, Menu Order, Random and sort order: ASC or DESC.
 
-Check out our demo : <a href="http://demo.theme-pack.com/featured-page/" target="_blank">demo1</a>
+Check out our demo : <a href="http://demo.theme-pack.com/featured-page/" target="_blank">demo1</a><br />
 Demo on Premium theme: <a href="http://wp.themesoul.com/nyirok/" target="_blank">demo2</a>
+
+Work great with <a href="http://wordpress.org/plugins/siteorigin-panels/">Page Builder by SiteOrigin</a>
 
 
 == Installation ==
 
 1. Upload the `amazing-pw` folder to the `/wp-content/plugins/` directory.
-1. Activate the plugin through the 'Plugins' menu in WordPress.
-1. Go to 'Appearance' > 'Widgets' and place the widget into a sidebar to configure it.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Go to 'Appearance' > 'Widgets' and place the widget into a sidebar to configure it.
 
-
-== Installation ==
 
 
 == Changelog ==
+
+= 1.0.5 =
+* Put enqueue script function inside add_action.
 
 = 1.0.4 =
 * Added enqueue jquery, fixed bug if theme not load jquery.
