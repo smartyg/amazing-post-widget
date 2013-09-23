@@ -38,6 +38,9 @@ Work great with <a href="http://wordpress.org/plugins/siteorigin-panels/">Page B
 
 == Changelog ==
 
+= 1.0.6 =
+* Add alternative enqueue script.
+
 = 1.0.5 =
 * Put enqueue script function inside add_action.
 
