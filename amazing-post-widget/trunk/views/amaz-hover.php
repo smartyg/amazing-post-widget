@@ -15,6 +15,9 @@ function enqueue_hover_script() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_hover_script');
 }
+wp_enqueue_script( 'jquery-touchSwipe' );
+wp_enqueue_script( 'jquery-ls' );
+wp_enqueue_script( 'jquery_easing' );
 global $post;
 $widget_no = rand(1,999);
 echo $before_widget;
