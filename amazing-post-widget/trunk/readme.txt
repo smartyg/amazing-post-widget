@@ -3,7 +3,7 @@ Contributors: faugro
 Donate link: http://pancenjoss.com/
 Tags: widget, posts, post, thumbnails, custom post types
 Requires at least: 3.4
-Tested up to: 3.6
+Tested up to: 3.7
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
