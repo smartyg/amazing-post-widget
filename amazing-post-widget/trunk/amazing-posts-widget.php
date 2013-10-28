@@ -4,7 +4,7 @@ Plugin Name: Amazing Posts Widget
 Plugin URI: http://pancenjoss.com
 Author: Faugro
 Author URI: http://pancenjoss.com
-Version: 1.0.6
+Version: 1.0.7
 Description: Amazing way to show your post, you can easily set your column, row, option to show it as slideshow, also the best part is you also can choose custom post type.
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -191,8 +191,8 @@ class PJ_Amazing_Posts_Widget extends WP_Widget {
 		$instance['offset']		= (int) $new_instance['offset'];
 		$instance['orderby']	= ( array_key_exists( $new_instance['orderby'], $this->orderbys ) ? $new_instance['orderby'] : 'date' );
 		$instance['order']		= ( array_key_exists( $new_instance['order'], $this->orders ) ? $new_instance['order'] : 'DESC' );
-		$instance['thumbnail']	= ( isset(  $new_instance['thumbnail'] ) ? (int) $new_instance['thumbnail'] : '0' );
-		$instance['post_title']	= ( isset(  $new_instance['post_title'] ) ? (int) $new_instance['post_title'] : '0' );
+		$instance['thumbnail']	= ( isset(  $new_instance['thumbnail'] ) ? (int) $new_instance['thumbnail'] : '' ); // change to '', previously '0', due to a bug, when use siteorigin page builder, always return to default after saving the post.
+		$instance['post_title']	= ( isset(  $new_instance['post_title'] ) ? (int) $new_instance['post_title'] : '' ); // change to '', previously '0'
 		$instance['excerpt_length']		= (int) $new_instance['excerpt_length'];
 		$instance['pages_number']		= (int) $new_instance['pages_number'];
 		$instance['rows']		= (int) $new_instance['rows'];
