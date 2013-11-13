@@ -20,10 +20,6 @@ wp_enqueue_script( 'jquery-ls' );
 wp_enqueue_script( 'jquery_easing' );
 global $post;
 $widget_no = rand(1,999);
-echo $before_widget;
-
-if ( !empty($title) )
-	echo $before_title . $title . $after_title;
 ?>
 	<div class="liquid-slider"  id="slider-id-<?php echo $widget_no; ?>">
 		<?php $i=0;
@@ -31,7 +27,7 @@ if ( !empty($title) )
 		{
 			$carousel_posts = new WP_Query( $argss[$i] );
 			if( $carousel_posts->have_posts() && $pages_number >= $i+1 ) : ?>
-			<div class="tp-carousel-posts portf-cols cols-<?php echo $columns; ?> row">
+			<div class="tp-carousel-posts portf-cols cols-<?php echo $columns; ?> clearfix">
 				<h2 class="title hidden">Slide <?php echo $i; ?></h2>
 			<?php while ( $carousel_posts->have_posts() ) : $carousel_posts->the_post(); ?>
 				<div id="carou-post-<?php the_ID(); ?>" <?php post_class(); ?> style="width:<?php echo (100/$columns); ?>%;">
@@ -81,4 +77,3 @@ jQuery(function() {
 });
 </script>
 <?php endif; ?>
-<?php echo $after_widget; ?>

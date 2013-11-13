@@ -1,13 +1,14 @@
 <?php
 /*
 Plugin Name: Amazing Posts Widget
-Plugin URI: http://pancenjoss.com
-Author: Faugro
+Plugin URI: http://pancenjoss.com/2013/amazing-posts-widget-plugins/
+Author: Fauzi Nugroho
 Author URI: http://pancenjoss.com
-Version: 1.0.7
+Version: 1.0.8
 Description: Amazing way to show your post, you can easily set your column, row, option to show it as slideshow, also the best part is you also can choose custom post type.
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Contributors: faugro
 */
 
 /*  
@@ -149,8 +150,14 @@ class PJ_Amazing_Posts_Widget extends WP_Widget {
 		
 		// Get the posts for this instance
 		
+		echo $before_widget;
+
+		if ( !empty($title) ) {
+			echo $before_title . $title . $after_title; }
+			
 		include ( PJ_AP_PATH . 'views/'.$template );
         
+		echo $after_widget;
     }
 
     /**
@@ -274,3 +281,63 @@ class PJ_Amazing_Posts_Widget extends WP_Widget {
     }	
 
 } // class PJ_Amazing_Posts_Widget
+
+/*-----------------------------------------------------------------------------------*/
+// Latest Posts
+// Example Use: [pj_apw post_title="true" excerpt_length="true" categories="all" thumbnail="true" img_width="250" img_height="150" rows="2" columns="1" pages_number="2" template="amaz-columns.php"]
+/*-----------------------------------------------------------------------------------*/
+
+function pj_apw_shortcode($atts, $content = null) {
+	extract(shortcode_atts(array(
+		'categories' => 'all',
+		'post_type' => 'post',
+		'offset'	=> '0',
+		'orderby'	=> 'date',
+		'order'		=> 'DESC',
+		'post_title' => 'true',
+		'excerpt_length' => '40',
+		'pages_number' => '1',
+		'rows'		=> '1',
+		'columns'	=> '3',
+		'thumbnail' => 'true',
+		'img_width' => '383',
+		'img_height' => '200',
+		'template'	=> 'amaz-columns.php'
+	), $atts));
+	global $post;
+	
+		$post_types = get_post_types();
+		unset($post_types['page'], $post_types['attachment'], $post_types['revision'], $post_types['nav_menu_item']);
+		
+		if($post_type == 'all') {
+			$post_type_array = $post_types;
+		} else {
+			$post_type_array = $post_type;
+		}
+		
+		$number = $rows*$columns;
+
+		// Setup the query
+		$i=0;
+		$argss=array();
+		while($i<$pages_number)
+		{
+			$argss[$i] = array(
+				'ignore_sticky_posts' => 1,
+				'cat' 				=> $categories,
+				'post_type'			=> $post_type_array,
+				'post_status'		=> array('publish', 'inherit'),
+				'posts_per_page'	=> $number,
+				'offset'			=> $number*$i+$offset,
+				'orderby'			=> $orderby,
+				'order'				=> $order,
+			);
+			$i++;
+		}
+		
+		// Get the posts for this instance
+		
+		include ( PJ_AP_PATH . 'views/'.$template );
+		
+}
+add_shortcode("pj_apw", "pj_apw_shortcode");
