@@ -23,7 +23,7 @@ This widget is combining and inspired by two great plugin, recent post flexslide
 * Select the sort orderby: Date, ID, Title, Menu Order, Random and sort order: ASC or DESC.
 
 = Shortcode =
-Example Use: [pj_apw post_title="true" excerpt_length="true" categories="all" thumbnail="true" img_width="250" img_height="150" rows="2" columns="1" pages_number="2" template="amaz-columns.php"]
+Example Use: [pj_apw post_title="true" excerpt_length="50" categories="all" thumbnail="true" img_width="250" img_height="150" rows="2" columns="1" pages_number="2" template="amaz-columns.php"]
 
 Check out our demo : <a href="http://demo.theme-pack.com/featured-page/" target="_blank">demo1</a><br />
 Demo on Premium theme: <a href="http://wp.themesoul.com/nyirok/" target="_blank">demo2</a>
