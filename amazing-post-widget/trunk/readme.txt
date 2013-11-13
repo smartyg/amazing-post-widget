@@ -22,6 +22,9 @@ This widget is combining and inspired by two great plugin, recent post flexslide
 * Easily set your own image width and height.
 * Select the sort orderby: Date, ID, Title, Menu Order, Random and sort order: ASC or DESC.
 
+= Shortcode =
+Example Use: [pj_apw post_title="true" excerpt_length="true" categories="all" thumbnail="true" img_width="250" img_height="150" rows="2" columns="1" pages_number="2" template="amaz-columns.php"]
+
 Check out our demo : <a href="http://demo.theme-pack.com/featured-page/" target="_blank">demo1</a><br />
 Demo on Premium theme: <a href="http://wp.themesoul.com/nyirok/" target="_blank">demo2</a>
 
@@ -37,6 +40,13 @@ Work great with <a href="http://wordpress.org/plugins/siteorigin-panels/">Page B
 
 
 == Changelog ==
+
+= 1.0.8 =
+* Fixed Float Bug, when the number of page is 1 or not use slider.
+* Added shortcode "this feature is still in beta".
+
+= 1.0.7 =
+* Fixed Bug with siteorigin panel.
 
 = 1.0.6 =
 * Add alternative enqueue script.

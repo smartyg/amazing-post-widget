@@ -237,6 +237,7 @@
   z-index: 1;
 }
 
+.tp-carousel-posts .hentry {float:left;}
 .tp-carousel-posts.portf-cols a { display:block; }
 .tp-carousel-posts.portf-cols .hover a { line-height:0; }
 .tp-carousel-posts.portf-cols a span.title {
@@ -262,6 +263,10 @@
   display:block;
 }
 .tp-carousel-posts.portf-cols a:hover span.title {}
+
+.clearfix{*zoom:1}
+.clearfix:before,.clearfix:after{display:table;line-height:0;content:""}
+.clearfix:after{clear:both}
 
 
 /******************************************************************
