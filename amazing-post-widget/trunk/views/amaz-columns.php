@@ -65,8 +65,7 @@ $widget_no = rand(1,999);
 	<?php // Be sure to reset any post_data before proceeding
 
 		wp_reset_postdata(); ?>
-<?php if ( $pages_number >= '2' ) : 
-ob_start(); ?>
+<?php if ( $pages_number >= '2' ) : ?>
 <script type="text/javascript">
 jQuery(function() {
   /* Here is the slider using default settings */
@@ -84,5 +83,4 @@ jQuery(function() {
 	  });
 });
 </script>
-<?php endif; 
-return ob_get_clean(); ?>
+<?php endif; ?>

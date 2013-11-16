@@ -41,6 +41,9 @@ Work great with <a href="http://wordpress.org/plugins/siteorigin-panels/">Page B
 
 == Changelog ==
 
+= 1.0.9 =
+* Fixed Bug due to missused ob.
+
 = 1.0.8 =
 * Fixed Float Bug, when the number of page is 1 or not use slider.
 * Added shortcode "this feature is still in beta".
