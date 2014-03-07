@@ -41,8 +41,8 @@
 
 }
 
-.liquid-slider-wrapper h2.title.hidden {
-  display:none;
+.liquid-slider .hidden {
+  display:none!important;
 }
 .liquid-slider-wrapper .liquid-slider .panel-container .fadeClass {
   /* Do not edit below this line */
@@ -263,6 +263,11 @@
   display:block;
 }
 .tp-carousel-posts.portf-cols a:hover span.title {}
+
+/* Full width image style */
+.fullwidth {position:relative;}
+.fullwidth .tp-carousel-posts .clasic img {width:100%;}
+.fullwidth .tp-carousel-posts .clasic .text-center {position:absolute; top:30%; left:0; width:100%;}
 
 .clearfix{*zoom:1}
 .clearfix:before,.clearfix:after{display:table;line-height:0;content:""}

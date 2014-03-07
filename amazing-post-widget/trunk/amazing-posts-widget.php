@@ -4,7 +4,7 @@ Plugin Name: Amazing Posts Widget
 Plugin URI: http://pancenjoss.com/2013/amazing-posts-widget-plugins/
 Author: Fauzi Nugroho
 Author URI: http://pancenjoss.com
-Version: 1.0.9
+Version: 1.0.10
 Description: Amazing way to show your post, you can easily set your column, row, option to show it as slideshow, also the best part is you also can choose custom post type.
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
