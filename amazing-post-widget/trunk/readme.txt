@@ -1,6 +1,6 @@
 === Amazing Posts Widget ===
 Contributors: faugro
-Donate link: http://pancenjoss.com/
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TCP69QNH4X5EJ
 Tags: widget, posts, post, thumbnails, custom post types
 Requires at least: 3.4
 Tested up to: 3.8
