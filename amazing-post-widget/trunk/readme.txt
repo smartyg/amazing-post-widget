@@ -3,7 +3,7 @@ Contributors: faugro
 Donate link: http://pancenjoss.com/
 Tags: widget, posts, post, thumbnails, custom post types
 Requires at least: 3.4
-Tested up to: 3.7
+Tested up to: 3.8
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ Work great with <a href="http://wordpress.org/plugins/siteorigin-panels/">Page B
 
 
 == Changelog ==
+
+= 1.0.10 =
+* Fixed Bug, hide slide title.
 
 = 1.0.9 =
 * Fixed Bug due to missused ob.
