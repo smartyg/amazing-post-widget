@@ -239,7 +239,7 @@
 
 .tp-carousel-posts .hentry {float:left;}
 .tp-carousel-posts.portf-cols a { display:block; }
-.tp-carousel-posts.portf-cols .hover a { line-height:0; }
+.tp-carousel-posts.portf-cols .hover a { line-height:0; position:relative; }
 .tp-carousel-posts.portf-cols a span.title {
   height:100%;
   position:absolute;
@@ -255,6 +255,9 @@
   background: rgba(0,0,0,.9);
   color:#FFF;
   padding:0 8%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
 .tp-carousel-posts.portf-cols a span.title span{
   position:relative;

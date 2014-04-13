@@ -41,6 +41,9 @@ Work great with <a href="http://wordpress.org/plugins/siteorigin-panels/">Page B
 
 == Changelog ==
 
+= 1.0.11 =
+* Fixed Bug, hover effect script, width on bootstrap,and position.
+
 = 1.0.10 =
 * Fixed Bug, hide slide title.
 
