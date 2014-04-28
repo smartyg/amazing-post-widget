@@ -94,6 +94,10 @@ if ( !defined('ABSPATH') )
 			<label for="<?php echo $this->get_field_id('excerpt_length'); ?>"><?php _e('Excerpt Character Length (leave it blank if you don\'t want to display post excerpt):', 'pancenjoss_amazing'); ?></label> 
 			<input id="<?php echo $this->get_field_id('excerpt_length'); ?>" name="<?php echo $this->get_field_name('excerpt_length'); ?>" type="text" value="<?php echo $excerpt_length; ?>" /><br style="clear:both;" />
         </p>
+        <p>
+			<label for="<?php echo $this->get_field_id('post_padding'); ?>"><?php _e('Padding for each post (in px):', 'pancenjoss_amazing'); ?></label> 
+			<input id="<?php echo $this->get_field_id('post_padding'); ?>" name="<?php echo $this->get_field_name('post_padding'); ?>" type="text" value="<?php echo $post_padding; ?>" /><br style="clear:both;" />
+        </p>
 	</div>
 	
 	<div class="section thumbnails">
