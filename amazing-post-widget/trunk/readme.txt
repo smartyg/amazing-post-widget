@@ -20,6 +20,7 @@ This widget is combining and inspired by two great plugin, recent post flexslide
 * Set the number of page displayed (using slider).
 * Set the number of columns and row per page displayed.
 * Easily set your own image width and height.
+* Set the padding for each post.
 * Select the sort orderby: Date, ID, Title, Menu Order, Random and sort order: ASC or DESC.
 
 = Shortcode =
@@ -29,6 +30,9 @@ Check out our demo : <a href="http://demo.theme-pack.com/featured-page/" target=
 Demo on Premium theme: <a href="http://wp.themesoul.com/nyirok/" target="_blank">demo2</a>
 
 Work great with <a href="http://wordpress.org/plugins/siteorigin-panels/">Page Builder by SiteOrigin</a>
+
+If you get an error after updating this plugin, please go to appearance > widget > and just save it, 
+or if you need to edit the padding, you may edit it first, than save it.
 
 
 == Installation ==
