@@ -3,7 +3,7 @@ Contributors: faugro
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TCP69QNH4X5EJ
 Tags: widget, posts, post, thumbnails, custom post types
 Requires at least: 3.4
-Tested up to: 3.8
+Tested up to: 3.9
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,8 +41,8 @@ Work great with <a href="http://wordpress.org/plugins/siteorigin-panels/">Page B
 
 == Changelog ==
 
-= 1.0.11 =
-* Fixed Bug, hover effect script, width on bootstrap,and position.
+= 1.1.0 =
+* Added Post Padding Option.
 
 = 1.0.10 =
 * Fixed Bug, hide slide title.

@@ -27,11 +27,11 @@ $widget_no = rand(1,999);
 		{
 			$carousel_posts = new WP_Query( $argss[$i] );
 			if( $carousel_posts->have_posts() && $pages_number >= $i+1 ) : ?>
-			<div class="tp-carousel-posts portf-cols cols-<?php echo $columns; ?> clearfix">
+			<div class="tp-carousel-posts portf-cols cols-<?php echo $columns; ?> clearfix" style="margin-right:-<?php if ( $pages_number < '2' ) { echo $post_padding; } else { echo '0'; } ?>px;">
 				<h2 class="title hidden">Slide <?php echo $i; ?></h2>
 			<?php while ( $carousel_posts->have_posts() ) : $carousel_posts->the_post(); ?>
 				<div id="carou-post-<?php the_ID(); ?>" <?php post_class(); ?> style="width:<?php echo (100/$columns); ?>%;">
-					<div class="margin clasic">
+					<div class="margin clasic" style="margin:0 <?php echo $post_padding; ?>px <?php echo $post_padding; ?>px 0">
 						<a href="<?php echo the_permalink(); ?>">
 							<?php
 								if( $thumbnail == true ) {

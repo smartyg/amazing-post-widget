@@ -4,7 +4,7 @@ Plugin Name: Amazing Posts Widget
 Plugin URI: http://wordpress.org/plugins/amazing-post-widget/
 Author: Fauzi Nugroho
 Author URI: http://profiles.wordpress.org/faugro-1
-Version: 1.0.11
+Version: 1.1.0
 Description: Amazing way to show your post, you can easily set your column, row, option to show it as slideshow, also the best part is you also can choose custom post type.
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -200,6 +200,7 @@ class PJ_Amazing_Posts_Widget extends WP_Widget {
 		$instance['order']		= ( array_key_exists( $new_instance['order'], $this->orders ) ? $new_instance['order'] : 'DESC' );
 		$instance['thumbnail']	= ( isset(  $new_instance['thumbnail'] ) ? (int) $new_instance['thumbnail'] : '' ); // change to '', previously '0', due to a bug, when use siteorigin page builder, always return to default after saving the post.
 		$instance['post_title']	= ( isset(  $new_instance['post_title'] ) ? (int) $new_instance['post_title'] : '' ); // change to '', previously '0'
+		$instance['post_padding']		= (int) $new_instance['post_padding'];
 		$instance['excerpt_length']		= (int) $new_instance['excerpt_length'];
 		$instance['pages_number']		= (int) $new_instance['pages_number'];
 		$instance['rows']		= (int) $new_instance['rows'];
@@ -262,6 +263,7 @@ class PJ_Amazing_Posts_Widget extends WP_Widget {
 			'orderby'	=> 'date',
 			'order'		=> 'DESC',
 			'post_title' => '1',
+			'post_padding' => '0 20px 20px 0',
 			'excerpt_length' => '40',
 			'pages_number' => '1',
 			'rows'		=> '1',
@@ -295,6 +297,7 @@ function pj_apw_shortcode($atts, $content = null) {
 		'orderby'	=> 'date',
 		'order'		=> 'DESC',
 		'post_title' => 'true',
+		'post_padding' => '0 20px 20px 0',
 		'excerpt_length' => '40',
 		'pages_number' => '1',
 		'rows'		=> '1',
