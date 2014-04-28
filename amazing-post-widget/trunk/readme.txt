@@ -26,8 +26,9 @@ This widget is combining and inspired by two great plugin, recent post flexslide
 = Shortcode =
 Example Use: [pj_apw post_title="true" excerpt_length="50" categories="all" thumbnail="true" img_width="250" img_height="150" rows="2" columns="1" pages_number="2" template="amaz-columns.php"]
 
-Check out our demo : <a href="http://demo.theme-pack.com/featured-page/" target="_blank">demo1</a><br />
-Demo on Premium theme: <a href="http://wp.themesoul.com/nyirok/" target="_blank">demo2</a>
+Check out our demo : 
+1. <a href="http://themeforest.net/item/raddin-elegant-responsive-wordpress-themes/6568509?ref=hainug" target="_blank">demo1</a><br />
+2. <a href="http://wp.themesoul.com/nyirok/" target="_blank">demo2</a>
 
 Work great with <a href="http://wordpress.org/plugins/siteorigin-panels/">Page Builder by SiteOrigin</a>
 
